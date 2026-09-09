@@ -1,5 +1,5 @@
 -- ============================================================================
 -- V9: Create Notification Schema
+-- Notification module: notification management, notification history, and notification preferences
 -- ============================================================================
 CREATE SCHEMA IF NOT EXISTS notification;
-COMMENT ON SCHEMA notification IS 'Notification module: email/SMS/push templates and dispatch delivery logs';

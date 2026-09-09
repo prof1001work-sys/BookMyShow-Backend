@@ -1,5 +1,5 @@
 -- ============================================================================
 -- V10: Create Review Schema
+-- Review module: review management, review history, and review preferences
 -- ============================================================================
 CREATE SCHEMA IF NOT EXISTS review;
-COMMENT ON SCHEMA review IS 'Review module: user movie reviews, star ratings, and moderation reports';

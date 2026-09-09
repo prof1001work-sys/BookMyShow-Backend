@@ -1,8 +1,15 @@
 -- ============================================================================
 -- V1: Create IAM (Identity & Access Management) Schema
 -- ============================================================================
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+-- MySQL 8.0
+--
+-- IAM module:
+--   - User credentials
+--   - Roles
+--   - Refresh tokens
+--   - Authentication audit
+--
+-- UUID generation is handled by the application layer.
+-- ============================================================================
 
-CREATE SCHEMA IF NOT EXISTS iam;
-COMMENT ON SCHEMA iam IS 'IAM module: user credentials, roles, refresh tokens, and authentication audit';
+CREATE DATABASE IF NOT EXISTS iam;
