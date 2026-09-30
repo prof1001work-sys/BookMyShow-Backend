@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:bookmyshow_test;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    url: jdbc:h2:mem:bookmyshow_test;MODE=MySQL;DATABASE_TO_LOWER=TRUE;INIT=CREATE SCHEMA IF NOT EXISTS iam\;CREATE SCHEMA IF NOT EXISTS master\;CREATE SCHEMA IF NOT EXISTS movie\;CREATE SCHEMA IF NOT EXISTS theatre\;CREATE SCHEMA IF NOT EXISTS "show"\;CREATE SCHEMA IF NOT EXISTS booking\;CREATE SCHEMA IF NOT EXISTS payment\;CREATE SCHEMA IF NOT EXISTS coupon\;CREATE SCHEMA IF NOT EXISTS notification\;CREATE SCHEMA IF NOT EXISTS review\;CREATE SCHEMA IF NOT EXISTS wishlist\;CREATE SCHEMA IF NOT EXISTS audit
     username: sa
     password: ""
     driver-class-name: org.h2.Driver

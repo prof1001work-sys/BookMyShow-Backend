@@ -1,5 +1,2 @@
--- ============================================================================
--- V9: Create Notification Schema
--- Notification module: notification management, notification history, and notification preferences
--- ============================================================================
+-- V9: Create Notification Schema for MySQL
 CREATE SCHEMA IF NOT EXISTS notification;

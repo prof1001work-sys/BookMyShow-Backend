@@ -1,5 +1,2 @@
--- ============================================================================
--- V10: Create Review Schema
--- Review module: review management, review history, and review preferences
--- ============================================================================
+-- V10: Create Review Schema for MySQL
 CREATE SCHEMA IF NOT EXISTS review;

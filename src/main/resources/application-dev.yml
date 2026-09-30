@@ -45,3 +45,5 @@ logging:
     org.springframework.security: INFO
     org.hibernate.SQL: DEBUG
     org.hibernate.orm.jdbc.bind: TRACE
+    org.hibernate.tool.schema: DEBUG
+    org.hibernate.engine.jdbc.env.internal: DEBUG

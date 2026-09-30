@@ -1,6 +1,2 @@
--- ============================================================================
--- V6: Create Booking Schema
--- Booking module: booking lifecycle, reserved seats, and booking history
--- ============================================================================
-
+-- V6: Create Booking Schema for MySQL
 CREATE SCHEMA IF NOT EXISTS booking;

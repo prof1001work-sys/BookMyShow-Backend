@@ -1,5 +1,2 @@
--- ============================================================================
--- V12: Create Audit & Transactional Outbox Schema
--- Audit module: audit management, audit history, and audit preferences
--- ============================================================================
+-- V12: Create Audit & Transactional Outbox Schema for MySQL
 CREATE SCHEMA IF NOT EXISTS audit;

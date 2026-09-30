@@ -1,15 +1,14 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/bookmyshow_test?useSSL=false&serverTimezone=Asia/Kolkata&allowPublicKeyRetrieval=true
-    username: root
-    password: ${DB_PASSWORD:Keshav798794}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+    url: jdbc:h2:mem:bookmyshow_test;MODE=MySQL;DATABASE_TO_LOWER=TRUE;INIT=CREATE SCHEMA IF NOT EXISTS iam\;CREATE SCHEMA IF NOT EXISTS master\;CREATE SCHEMA IF NOT EXISTS movie\;CREATE SCHEMA IF NOT EXISTS theatre\;CREATE SCHEMA IF NOT EXISTS "show"\;CREATE SCHEMA IF NOT EXISTS booking\;CREATE SCHEMA IF NOT EXISTS payment\;CREATE SCHEMA IF NOT EXISTS coupon\;CREATE SCHEMA IF NOT EXISTS notification\;CREATE SCHEMA IF NOT EXISTS review\;CREATE SCHEMA IF NOT EXISTS wishlist\;CREATE SCHEMA IF NOT EXISTS audit
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
     hikari:
       maximum-pool-size: 5
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create-drop
     show-sql: false

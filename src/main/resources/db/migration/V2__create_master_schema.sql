@@ -1,6 +1,2 @@
--- ============================================================================
--- V2: Create Master Data Schema
--- Master Data module: cities, regions, languages, genres, and certification ratings
--- ============================================================================
-
+-- V2: Create Master Data Schema for MySQL
 CREATE SCHEMA IF NOT EXISTS master;

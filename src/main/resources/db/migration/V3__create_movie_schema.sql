@@ -1,6 +1,2 @@
--- ============================================================================
--- V3: Create Movie Schema
--- Movie module: movies, formats, cast, crew, trailers, and release metadata
--- ============================================================================
-
+-- V3: Create Movie Schema for MySQL
 CREATE SCHEMA IF NOT EXISTS movie;

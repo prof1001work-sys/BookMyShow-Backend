@@ -1,12 +1,9 @@
--- PostgreSQL initialization script: Create database extensions and module schemas
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-CREATE EXTENSION IF NOT EXISTS "pgcrypto";
-
+-- MySQL initialization script: Create module schemas (databases)
 CREATE SCHEMA IF NOT EXISTS iam;
 CREATE SCHEMA IF NOT EXISTS master;
 CREATE SCHEMA IF NOT EXISTS movie;
 CREATE SCHEMA IF NOT EXISTS theatre;
-CREATE SCHEMA IF NOT EXISTS show;
+CREATE SCHEMA IF NOT EXISTS `show`;
 CREATE SCHEMA IF NOT EXISTS booking;
 CREATE SCHEMA IF NOT EXISTS payment;
 CREATE SCHEMA IF NOT EXISTS coupon;
