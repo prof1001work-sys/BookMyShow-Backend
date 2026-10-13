@@ -83,7 +83,20 @@ public class ModularMonolithArchitectureTest {
                     "com.bookmyshow.booking.infrastructure..",
                     "com.bookmyshow.payment.infrastructure..",
                     "com.bookmyshow.movie.infrastructure..",
-                    "com.bookmyshow.theatre.infrastructure.."
+                    "com.bookmyshow.theatre..",
+                    "com.bookmyshow.master.infrastructure.."
             )
             .because("IAM module must not access other module infrastructure directly.");
+
+    @ArchTest
+    static final ArchRule master_infrastructure_should_not_be_accessed_by_other_modules = noClasses()
+            .that().resideInAnyPackage(
+                    "com.bookmyshow.iam..",
+                    "com.bookmyshow.booking..",
+                    "com.bookmyshow.payment..",
+                    "com.bookmyshow.movie..",
+                    "com.bookmyshow.theatre.."
+            )
+            .should().dependOnClassesThat().resideInAPackage("com.bookmyshow.master.infrastructure..")
+            .because("Master module infrastructure must not be accessed directly by other modules. Use MasterDataModuleApi instead.");
 }
