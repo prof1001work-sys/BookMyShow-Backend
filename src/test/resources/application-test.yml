@@ -13,6 +13,9 @@ spring:
       ddl-auto: create-drop
     show-sql: false
 
+  cache:
+    type: simple
+
   flyway:
     enabled: false
 

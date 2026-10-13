@@ -69,6 +69,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/api/v1/theatres/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/v1/shows/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/v1/cities/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/master/**").permitAll()
                         // Any other request authenticated
                         .anyRequest().authenticated()
                 )
